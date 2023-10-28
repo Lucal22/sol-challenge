@@ -32,6 +32,9 @@ export const Logo = styled.div`
 `;
 
 export const Profile = styled.div`
+  p {
+    display: none;
+  }
   @media (min-width: 1280px) {
     display: flex;
     align-items: center;

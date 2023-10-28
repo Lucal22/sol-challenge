@@ -15,6 +15,9 @@ export const Container = styled.div`
   border-radius: 0px 0px 32px 0px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
   @media (min-width: 1280px) {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
     padding-top: 40px;
     border-bottom: 1px solid ${theme.colors.border};
   }
