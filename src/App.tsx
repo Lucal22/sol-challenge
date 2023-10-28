@@ -1,7 +1,5 @@
-import * as Styled from "./styles";
-
 function App() {
-  return <Styled.Container>Olá mundo</Styled.Container>;
+  return <></>;
 }
 
 export default App;
