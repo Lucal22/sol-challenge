@@ -1,5 +1,5 @@
+import { theme } from "./../../styles/theme";
 import styled from "styled-components";
-import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
   padding-top: 32px;
@@ -33,7 +33,7 @@ export const Title = styled.div`
   }
 `;
 
-export const AllBooks = styled.div`
+export const SeeAll = styled.div`
   p {
     cursor: pointer;
     color: ${theme.colors.purple};
@@ -55,26 +55,45 @@ export const FavoriteBooksArea = styled.div`
   gap: 20px;
   display: flex;
   overflow-x: auto;
+
   @media (min-width: 1280px) {
+    overflow-x: scroll;
     margin: 0;
     padding-top: 24px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 136px);
     gap: 24px;
   }
   &::-webkit-scrollbar {
-    background-color: transparent;
+    display: block;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: ${theme.background.gray};
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    width: 50px;
+    height: 1px;
+    background: ${theme.colors.details};
+    border-radius: 5px;
   }
 `;
 
 export const BookCard = styled.a`
+  width: 136px;
   cursor: pointer;
-  img {
+  figure {
+    position: relative;
+    overflow: hidden;
     width: 136px;
     height: 198px;
     border-radius: 8px;
     flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
+
   p:nth-child(2) {
     margin-top: 10px;
     height: 36px;
