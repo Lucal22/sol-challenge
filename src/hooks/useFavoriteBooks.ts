@@ -1,7 +1,6 @@
 import axios from "axios";
 import { BooksFetchResponse } from "../types/books";
-
-const API_URL = "https://us-central1-ss-devops.cloudfunctions.net/GraphQL";
+import { API_URL } from "../config/app-config";
 
 export default async function fetchFavoriteBooks(): Promise<BooksFetchResponse> {
   const data = await axios.post(API_URL, {
