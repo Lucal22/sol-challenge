@@ -9,7 +9,6 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   gap: 40px;
-  width: 100%;
   padding-top: 16px;
   background-color: ${theme.background.white};
   border-radius: 0px 0px 32px 0px;
@@ -20,6 +19,7 @@ export const Container = styled.div`
     background-color: transparent;
     padding-top: 40px;
     border-bottom: 1px solid ${theme.colors.border};
+    margin: 0 172px;
   }
 `;
 
