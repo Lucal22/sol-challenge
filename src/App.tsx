@@ -4,6 +4,7 @@ import { CategoryFilterContextProvider } from "./context/category-filter-context
 import Footer from "./container/Footer";
 import BookPage from "./container/BookPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   const client = new QueryClient();
@@ -17,6 +18,7 @@ function App() {
             <Route path="/:id" element={<BookPage />} />
           </Routes>
         </Router>
+        <BottomNav />
         <Footer />
       </CategoryFilterContextProvider>
     </QueryClientProvider>
