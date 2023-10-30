@@ -9,7 +9,8 @@ export const Container = styled.div`
   z-index: 99;
   display: flex;
   position: fixed;
-  justify-content: space-between;
+  gap: 26px;
+  justify-content: center;
   padding: 9px 31px 9px 27px;
   bottom: 0;
   height: 56px;
