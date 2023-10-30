@@ -18,7 +18,7 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.div`
-  h1 {
+  a {
     color: ${theme.colors.title};
     font-family: ${theme.font.bebas};
     font-size: 33px;

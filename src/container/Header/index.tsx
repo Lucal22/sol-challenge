@@ -5,9 +5,9 @@ export default function Header() {
   return (
     <Styled.Container>
       <Styled.Logo>
-        <h1>
+        <a href="/">
           SS<span>BOOK</span>
-        </h1>
+        </a>
       </Styled.Logo>
       <Styled.Search>
         <input type="search" placeholder="Busque um livro" />

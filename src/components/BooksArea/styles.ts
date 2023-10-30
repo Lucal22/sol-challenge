@@ -3,19 +3,17 @@ import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
   padding-top: 10px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, 296px);
   gap: 20px;
-
+  margin: 0 auto;
   @media (min-width: 1280px) {
     padding-top: 14px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 296px);
-    gap: 24px;
     min-height: 348px;
+    gap: 24px;
   }
 `;
-
 export const BookCard = styled.div`
   width: 320px;
   display: flex;

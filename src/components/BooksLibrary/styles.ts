@@ -6,12 +6,12 @@ export const Container = styled.div`
   padding-left: 20px;
   color: ${theme.colors.title};
   background-color: ${theme.background.white};
+  @media (min-width: 750px) {
+    padding-bottom: 60px;
+  }
   @media (min-width: 1280px) {
-    padding-top: 35px;
-    @media (min-width: 1280px) {
-      margin-left: 140px;
-      padding: 32px 172px 0 32px;
-    }
+    margin-left: 140px;
+    padding: 32px 172px 60px 32px;
   }
 `;
 
