@@ -1,8 +1,8 @@
 import axios from "axios";
-import { BooksFetchResponse } from "../types/books";
+import { FavoriteBooksFetchResponse } from "../types/books";
 import { API_URL } from "../config/app-config";
 
-export default async function fetchFavoriteBooks(): Promise<BooksFetchResponse> {
+export default async function fetchFavoriteBooks(): Promise<FavoriteBooksFetchResponse> {
   const data = await axios.post(API_URL, {
     query: `query{
         favoriteBooks{

@@ -1,3 +1,5 @@
+import { CategoryFilterTypes } from "./categoryFilter";
+
 export type BookCard = {
   id: string;
   name: string;
@@ -5,6 +7,7 @@ export type BookCard = {
   author: {
     name: string;
   };
+  category: CategoryFilterTypes;
 };
 
 export type Book = BookCard & {
@@ -12,8 +15,14 @@ export type Book = BookCard & {
   category: string;
 };
 
-export type BooksFetchResponse = {
+export type FavoriteBooksFetchResponse = {
   data: {
     favoriteBooks: BookCard[];
+  };
+};
+
+export type BooksFetchResponse = {
+  data: {
+    allBooks: BookCard[];
   };
 };
