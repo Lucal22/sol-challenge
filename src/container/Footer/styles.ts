@@ -7,6 +7,7 @@ export const Container = styled.div`
   padding: 16px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: 1280px) {
     padding: 16px 172px;
