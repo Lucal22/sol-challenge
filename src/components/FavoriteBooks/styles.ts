@@ -108,7 +108,7 @@ export const BookDescription = styled.div`
     height: 36px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: break-spaces;
+    white-space: nowrap;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
