@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
-  color: ${theme.colors.title};
+  min-height: 100vh;
 `;

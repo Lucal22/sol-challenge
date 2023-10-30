@@ -12,7 +12,7 @@ export type BookCard = {
 
 export type Book = BookCard & {
   description: string;
-  category: string;
+  isFavorite: boolean;
 };
 
 export type FavoriteBooksFetchResponse = {
@@ -24,5 +24,11 @@ export type FavoriteBooksFetchResponse = {
 export type BooksFetchResponse = {
   data: {
     allBooks: BookCard[];
+  };
+};
+
+export type BookFetchResponse = {
+  data: {
+    book: Book;
   };
 };
