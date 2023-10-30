@@ -29,7 +29,7 @@ export default function BookPage() {
         <Header />
       </Styled.Nav>
       <Styled.Container>
-        {isLoading ? <div>loading</div> : null}
+        {isLoading ? <div /> : null}
         {book ? (
           <>
             <Styled.Header>
