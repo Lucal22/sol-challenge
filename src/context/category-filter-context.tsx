@@ -4,7 +4,7 @@ import { CategoryFilterTypes } from "../types/categoryFilter";
 export const CategoryFilterContext = createContext({
   category: "ALL",
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  setCategory: (value: CategoryFilterTypes) => {},
+  setCategory: (_value: CategoryFilterTypes) => {},
 });
 
 interface ProviderProps {
