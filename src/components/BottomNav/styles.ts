@@ -6,6 +6,7 @@ type BottomNavStyleTypes = {
 };
 
 export const Container = styled.div`
+  z-index: 99;
   display: flex;
   position: fixed;
   justify-content: space-between;
