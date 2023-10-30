@@ -1,3 +1,4 @@
+import BooksLibrary from "../../components/BooksLibrary";
 import FavoriteAuthors from "../../components/FavoriteAuthors";
 import FavoriteBooks from "../../components/FavoriteBooks";
 import Filters from "../../components/Filters";
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Filters />
       <FavoriteBooks />
       <FavoriteAuthors />
+      <BooksLibrary />
     </Styled.Container>
   );
 }
