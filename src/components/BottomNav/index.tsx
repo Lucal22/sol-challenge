@@ -5,8 +5,10 @@ export default function BottomNav() {
   return (
     <Styled.Container>
       <Styled.ButtonArea isHome={true}>
-        <Home />
-        <p>Início</p>
+        <a href="/">
+          <Home />
+          <p>Início</p>
+        </a>
       </Styled.ButtonArea>
       <Styled.ButtonArea isHome={false}>
         <Add />

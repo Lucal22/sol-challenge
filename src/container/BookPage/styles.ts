@@ -190,7 +190,7 @@ export const Description = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
-    padding-bottom: 20px;
+    padding-bottom: 76px;
   }
   @media (min-width: 950px) {
     padding-left: 352px;
