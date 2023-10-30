@@ -4,13 +4,10 @@ import { theme } from "../../styles/theme";
 export const Container = styled.div`
   color: ${theme.colors.white};
   background-color: ${theme.colors.purple};
-  display: none;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
 
-  @media (min-width: 750px) {
-    padding: 16px 20px;
-    display: flex;
-    justify-content: space-between;
-  }
   @media (min-width: 1280px) {
     padding: 16px 172px;
     background-color: ${theme.colors.purple};
