@@ -2,14 +2,11 @@ import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
-  color: ${theme.colors.white};
-  background-color: ${theme.colors.purple};
-  padding: 16px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 950px) {
+    display: block;
+    color: ${theme.colors.white};
     padding: 16px 172px;
     background-color: ${theme.colors.purple};
     display: flex;
