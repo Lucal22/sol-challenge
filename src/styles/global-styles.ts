@@ -7,12 +7,15 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   html,
 body {
     background-color: ${theme.background.gray};
     font-family: ${theme.font.roboto};
     color: ${theme.colors.title};
+}
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 a {
