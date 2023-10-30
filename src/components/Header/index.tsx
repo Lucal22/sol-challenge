@@ -40,9 +40,7 @@ export default function Header() {
             </Styled.Avatar>
             <p>Jucicreide</p>
           </>
-        ) : (
-          <Styled.Skeleton />
-        )}
+        ) : null}
       </Styled.Profile>
     </Styled.Container>
   );
