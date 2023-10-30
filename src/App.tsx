@@ -1,14 +1,17 @@
 import HomePage from "./container/HomePage";
 import Header from "./container/Header";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { CategoryFilterContextProvider } from "./context/category-filter-context";
 
 function App() {
   const client = new QueryClient();
 
   return (
     <QueryClientProvider client={client}>
-      <Header />
-      <HomePage />
+      <CategoryFilterContextProvider>
+        <Header />
+        <HomePage />
+      </CategoryFilterContextProvider>
     </QueryClientProvider>
   );
 }
