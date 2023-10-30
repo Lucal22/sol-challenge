@@ -4,15 +4,12 @@ import { theme } from "../../styles/theme";
 export const Container = styled.div`
   padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 136px;
   color: ${theme.colors.title};
   background-color: ${theme.background.white};
-  @media (min-width: 750px) {
-    padding-bottom: 60px;
-  }
   @media (min-width: 1280px) {
     margin-left: 140px;
-    padding: 32px 172px 60px 32px;
+    padding: 32px 172px 136px 32px;
   }
 `;
 

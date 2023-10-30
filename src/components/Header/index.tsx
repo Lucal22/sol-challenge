@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import { DarkAdd, DarkFavorites, Search } from "../../components/Icons";
+import { DarkAdd, DarkFavorites, Search } from "../Icons";
 import fetchPicture from "../../hooks/usePicture";
 import * as Styled from "./styles";
 

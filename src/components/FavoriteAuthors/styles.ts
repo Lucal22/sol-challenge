@@ -64,7 +64,6 @@ export const AuthorsArea = styled.div`
   @media (min-width: 890px) {
     padding-left: 0;
     gap: 24px;
-    justify-content: center;
   }
   &::-webkit-scrollbar {
     display: block;
