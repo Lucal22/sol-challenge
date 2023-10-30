@@ -24,12 +24,18 @@ export default function FavoriteBooks() {
         {favoriteBooks
           ? favoriteBooks.map((books) => {
               return (
-                <Styled.BookCard key={books.id} href={`/${books.id}`}>
+                <Styled.BookCard key={books.id}>
                   <figure>
-                    <img src={books.cover} />
+                    <a href={`/${books.id}`}>
+                      <img src={books.cover} />
+                    </a>
                   </figure>
-                  <p> {books.name}</p>
-                  <p>{books.author.name}</p>
+                  <Styled.BookDescription>
+                    <a href={`/${books.id}`}>
+                      <p> {books.name}</p>
+                    </a>
+                    <p>{books.author.name}</p>
+                  </Styled.BookDescription>
                 </Styled.BookCard>
               );
             })

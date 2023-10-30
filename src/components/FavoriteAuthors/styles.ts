@@ -94,7 +94,7 @@ export const AuthorsCard = styled.div`
   }
 `;
 
-export const AuthorImg = styled.div`
+export const AuthorImg = styled.figure`
   position: relative;
   overflow: hidden;
   width: 63px;

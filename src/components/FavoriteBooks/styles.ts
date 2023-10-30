@@ -70,17 +70,16 @@ export const FavoriteBooksArea = styled.div`
     background-color: ${theme.background.gray};
   }
   &::-webkit-scrollbar-thumb:hover {
-    width: 50px;
     height: 1px;
     background: ${theme.colors.details};
     border-radius: 5px;
   }
 `;
 
-export const BookCard = styled.a`
+export const BookCard = styled.div`
   width: 136px;
-  cursor: pointer;
   figure {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     width: 136px;
@@ -93,8 +92,11 @@ export const BookCard = styled.a`
       object-fit: cover;
     }
   }
+`;
 
-  p:nth-child(2) {
+export const BookDescription = styled.div`
+  p:nth-child(1) {
+    cursor: pointer;
     margin-top: 10px;
     height: 36px;
     overflow: hidden;
@@ -105,7 +107,7 @@ export const BookCard = styled.a`
     font-weight: 700;
     line-height: 18px;
   }
-  p:nth-child(3) {
+  p:nth-child(2) {
     color: ${theme.colors.details};
     margin-top: 2px;
     font-size: 14px;
