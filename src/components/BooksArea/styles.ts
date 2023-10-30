@@ -26,6 +26,16 @@ export const BookCard = styled.div`
   }
 `;
 
+export const Skeleton = styled.div`
+  background-color: ${theme.colors.border};
+  min-width: 320px;
+  height: 100px;
+  border-radius: 8px;
+  @media (min-width: 1280px) {
+    min-width: 296px;
+  }
+`;
+
 export const BookIcon = styled.figure`
   cursor: pointer;
   width: 68px;

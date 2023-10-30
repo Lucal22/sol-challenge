@@ -2,6 +2,8 @@ import { useQuery } from "react-query";
 import * as Styled from "./styles";
 import fetchFavoriteAuthors from "../../hooks/useFavoriteAuthors";
 
+const skeleton = [1, 2, 3];
+
 export default function FavoriteAuthors() {
   const { data, isLoading } = useQuery(
     "favoriteAuthors",
@@ -24,7 +26,9 @@ export default function FavoriteAuthors() {
         </Styled.SeeAll>
       </Styled.Header>
       <Styled.AuthorsArea>
-        {isLoading ? <div>loading</div> : null}
+        {isLoading
+          ? skeleton.map((item) => <Styled.Skeleton key={item} />)
+          : null}
         {favoriteAuthors
           ? favoriteAuthors.map((author) => {
               return (
@@ -39,7 +43,7 @@ export default function FavoriteAuthors() {
                 </Styled.AuthorsCard>
               );
             })
-          : null}
+          : skeleton.map((item) => <Styled.Skeleton key={item} />)}
       </Styled.AuthorsArea>
     </Styled.Container>
   );

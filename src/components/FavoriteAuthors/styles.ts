@@ -94,6 +94,16 @@ export const AuthorsCard = styled.div`
   }
 `;
 
+export const Skeleton = styled.div`
+  min-width: 248px;
+  height: 70px;
+  border-radius: 8px;
+  background-color: ${theme.colors.border};
+  @media (min-width: 1280px) {
+    min-width: 296px;
+  }
+`;
+
 export const AuthorImg = styled.figure`
   position: relative;
   overflow: hidden;

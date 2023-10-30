@@ -2,6 +2,8 @@ import { useQuery } from "react-query";
 import * as Styled from "./styles";
 import fetchFavoriteBooks from "../../hooks/useFavoriteBooks";
 
+const skeleton = [1, 2, 3, 4, 5, 6];
+
 export default function FavoriteBooks() {
   const { data, isLoading } = useQuery("favoriteBooks", fetchFavoriteBooks, {
     staleTime: Infinity,
@@ -20,7 +22,9 @@ export default function FavoriteBooks() {
         </Styled.SeeAll>
       </Styled.Header>
       <Styled.FavoriteBooksArea>
-        {isLoading ? <div>Loading</div> : null}
+        {isLoading
+          ? skeleton.map((item) => <Styled.Skeleton key={item} />)
+          : null}
         {favoriteBooks
           ? favoriteBooks.map((books) => {
               return (
@@ -39,7 +43,7 @@ export default function FavoriteBooks() {
                 </Styled.BookCard>
               );
             })
-          : null}
+          : skeleton.map((item) => <Styled.Skeleton key={item} />)}
       </Styled.FavoriteBooksArea>
     </Styled.Container>
   );

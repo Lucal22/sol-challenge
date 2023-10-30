@@ -94,6 +94,13 @@ export const BookCard = styled.div`
   }
 `;
 
+export const Skeleton = styled.div`
+  min-width: 136px;
+  height: 261px;
+  background-color: ${theme.colors.border};
+  border-radius: 8px;
+`;
+
 export const BookDescription = styled.div`
   p:nth-child(1) {
     cursor: pointer;
