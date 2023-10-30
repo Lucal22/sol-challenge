@@ -40,6 +40,7 @@ export const Profile = styled.div`
     align-items: center;
     gap: 12px;
     p {
+      cursor: pointer;
       display: block;
       font-size: 14px;
       font-style: normal;
@@ -47,6 +48,28 @@ export const Profile = styled.div`
       line-height: normal;
     }
   }
+`;
+
+export const Avatar = styled.figure`
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+export const Skeleton = styled.div`
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 32px;
+  background-color: ${theme.colors.border};
 `;
 
 export const Search = styled.div`

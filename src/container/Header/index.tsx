@@ -1,7 +1,14 @@
-import Icons, { DarkAdd, DarkFavorites, Search } from "../../components/Icons";
+import { useQuery } from "react-query";
+import { DarkAdd, DarkFavorites, Search } from "../../components/Icons";
+import fetchPicture from "../../hooks/usePicture";
 import * as Styled from "./styles";
 
 export default function Header() {
+  const { data, isLoading } = useQuery("usePicture", fetchPicture, {
+    staleTime: Infinity,
+  });
+
+  const picture = data?.data.userPicture;
   return (
     <Styled.Container>
       <Styled.Logo>
@@ -25,7 +32,17 @@ export default function Header() {
       </Styled.Filter>
       <Styled.Separation />
       <Styled.Profile>
-        <img src={Icons.avatar} alt="a" /> <p>Jucicreide</p>
+        {isLoading ? <Styled.Skeleton /> : null}
+        {picture ? (
+          <>
+            <Styled.Avatar>
+              <img src={picture} alt="a" />
+            </Styled.Avatar>
+            <p>Jucicreide</p>
+          </>
+        ) : (
+          <Styled.Skeleton />
+        )}
       </Styled.Profile>
     </Styled.Container>
   );
