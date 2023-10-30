@@ -4,7 +4,7 @@ import { theme } from "../../styles/theme";
 export const Container = styled.div`
   display: none;
 
-  @media (min-width: 950px) {
+  @media (min-width: 1280px) {
     display: block;
     color: ${theme.colors.white};
     padding: 16px 172px;
