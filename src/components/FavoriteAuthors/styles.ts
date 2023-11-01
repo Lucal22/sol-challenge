@@ -9,7 +9,7 @@ export const Container = styled.div`
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
 
   @media (min-width: 1280px) {
-    margin-top: 27px;
+    margin-top: 22px;
     margin-left: 140px;
     padding: 32px 172px 0 32px;
   }
@@ -56,12 +56,13 @@ export const SeeAll = styled.div`
 `;
 
 export const AuthorsArea = styled.div`
-  padding-top: 24px;
-  padding-left: 22px;
+  padding-top: 21px;
+  padding-left: 21px;
   display: flex;
   overflow-x: scroll;
   gap: 21px;
   @media (min-width: 890px) {
+    padding-top: 24px;
     padding-left: 0;
     gap: 24px;
   }

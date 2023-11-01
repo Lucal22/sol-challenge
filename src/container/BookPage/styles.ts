@@ -41,6 +41,7 @@ export const Header = styled.div`
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      padding-bottom: 12px;
     }
     p {
       color: ${theme.colors.details};
@@ -151,7 +152,7 @@ export const Content = styled.div`
   }
 
   @media (min-width: 1280px) {
-    padding: 24px 172px 60px 0;
+    padding: 24px 172px 40px 0;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     min-height: 600px;
   }

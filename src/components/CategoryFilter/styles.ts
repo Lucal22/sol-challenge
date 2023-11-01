@@ -7,9 +7,12 @@ type CategoryFilterStyleTypes = {
 
 export const Container = styled.div`
   overflow-x: scroll;
-  padding-top: 24px;
+  padding-top: 21px;
   display: flex;
   gap: 8px;
+  @media (min-width: 1280px) {
+    padding-top: 24px;
+  }
   &::-webkit-scrollbar {
     display: block;
     height: 10px;
@@ -37,7 +40,7 @@ export const Categories = styled.button<CategoryFilterStyleTypes>`
     line-height: 20px;
   }
   ${({ active }) => css`
-    background-color: ${active ? theme.colors.purple : null};
+    background-color: ${active ? theme.colors.purple : theme.background.white};
     border-color: ${active ? theme.colors.purple : theme.colors.border};
     p {
       color: ${active ? theme.colors.white : theme.colors.details};

@@ -20,14 +20,14 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.div`
-  h1 {
+  h2 {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
   @media (min-width: 1280px) {
-    h1 {
+    h2 {
       font-size: 28px;
     }
   }
@@ -37,14 +37,14 @@ export const SeeAll = styled.div`
   p {
     cursor: pointer;
     color: ${theme.colors.purple};
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
   @media (min-width: 1280px) {
     p {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 `;
