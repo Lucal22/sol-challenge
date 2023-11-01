@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# Prova frontend - Studio Sol (pt-br)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi feito como parte da prova prática para a vaga de desenvolvedor frontend do Studio Sol. Trata-se de um website que funciona como uma biblioteca de livros.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React.js](https://pt-br.reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite.js](https://vitejs.dev/)
+- [Styled Components](https://styled-components.com/)
 
-## Expanding the ESLint configuration
+## Bibliotecas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Axios](https://axios-http.com/ptbr/)
+- [React Router Dom](https://reactrouter.com/en/main)
+- [React Query](https://tanstack.com/query/v3/docs/react/guides/queries)
+- [Jest](https://jestjs.io/pt-BR/)
 
-- Configure the top-level `parserOptions` property like this:
+## Desenvolvimento
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+O SSBOOK foi construído com tecnologias como React.js e TypeScript, aproveitando a eficiência de Vite.js para sua configuração. A estilização foi realizada com a ajuda de Styled Components.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+A obtenção de dados da API GraphQL foram feitos com Axios e React Query. O gerenciamento de rotas foi implementado com o auxílio do React Router Dom e a qualidade do código dos componentes foi assegurada por meio dos testes utilizando Jest.
+
+O frontend está hospedado na [Vercel](https://vercel.com/) e pode ser acessado clicando nesse [Link](https://sol-challenge.vercel.app/)
