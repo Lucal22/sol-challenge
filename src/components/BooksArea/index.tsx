@@ -19,12 +19,14 @@ export default function BooksArea() {
   return (
     <Styled.Container>
       {isLoading
-        ? skeleton.map((item) => <Styled.Skeleton key={item} />)
+        ? skeleton.map((item) => (
+            <Styled.Skeleton data-testid="skeleton" key={item} />
+          ))
         : null}
       {filteredBooks
         ? filteredBooks.map((books) => {
             return (
-              <Styled.BookCard key={books.id}>
+              <Styled.BookCard data-testid="bookCards" key={books.id}>
                 <Styled.BookIcon>
                   <a href={`/${books.id}`}>
                     <img

@@ -23,12 +23,14 @@ export default function FavoriteBooks() {
       </Styled.Header>
       <Styled.FavoriteBooksArea>
         {isLoading
-          ? skeleton.map((item) => <Styled.Skeleton key={item} />)
+          ? skeleton.map((item) => (
+              <Styled.Skeleton data-testid="skeleton" key={item} />
+            ))
           : null}
         {favoriteBooks
           ? favoriteBooks.map((books) => {
               return (
-                <Styled.BookCard key={books.id}>
+                <Styled.BookCard data-testid="favoriteBooksCard" key={books.id}>
                   <figure>
                     <a href={`/${books.id}`}>
                       <img src={books.cover} />

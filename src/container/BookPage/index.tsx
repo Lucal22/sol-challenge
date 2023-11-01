@@ -87,7 +87,11 @@ export default function BookPage() {
               </Styled.ContentHeader>
               <Styled.Description>
                 {paragraph
-                  ? paragraph.map((p, index) => <p key={index}>{p}</p>)
+                  ? paragraph.map((p, index) => (
+                      <p data-testid="description" key={index}>
+                        {p}
+                      </p>
+                    ))
                   : null}
                 <Styled.AuthorDescription>
                   <h2>Sobre o Autor</h2>

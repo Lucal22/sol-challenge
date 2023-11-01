@@ -8,6 +8,7 @@ export default function Filters() {
     <Styled.Container>
       <Styled.Filter isClicked={myBooks}>
         <p
+          data-testid="myBooksButton"
           onClick={() => {
             setMyBooks(true);
             setRent(false);
@@ -19,6 +20,7 @@ export default function Filters() {
       </Styled.Filter>
       <Styled.Filter isClicked={rent}>
         <p
+          data-testid="rentButton"
           onClick={() => {
             setRent(true);
             setMyBooks(false);

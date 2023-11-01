@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Categories = styled.div<CategoryFilterStyleTypes>`
+export const Categories = styled.button<CategoryFilterStyleTypes>`
   cursor: pointer;
   height: 32px;
   padding: 6px 16px;

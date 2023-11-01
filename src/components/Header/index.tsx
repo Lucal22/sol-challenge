@@ -32,10 +32,10 @@ export default function Header() {
       </Styled.Filter>
       <Styled.Separation />
       <Styled.Profile>
-        {isLoading ? <Styled.Skeleton /> : null}
+        {isLoading ? <Styled.Skeleton data-testid="skeleton" /> : null}
         {picture ? (
           <>
-            <Styled.Avatar>
+            <Styled.Avatar data-testid="userProfile">
               <img src={picture} alt="a" />
             </Styled.Avatar>
             <p>Jucicreide</p>

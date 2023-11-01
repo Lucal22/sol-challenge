@@ -27,12 +27,14 @@ export default function FavoriteAuthors() {
       </Styled.Header>
       <Styled.AuthorsArea>
         {isLoading
-          ? skeleton.map((item) => <Styled.Skeleton key={item} />)
+          ? skeleton.map((item) => (
+              <Styled.Skeleton data-testid={"skeleton"} key={item} />
+            ))
           : null}
         {favoriteAuthors
           ? favoriteAuthors.map((author) => {
               return (
-                <Styled.AuthorsCard key={author.id}>
+                <Styled.AuthorsCard data-testid="authorsCard" key={author.id}>
                   <Styled.AuthorImg>
                     <img src={author.picture} alt={`Foto de ${author.name}`} />
                   </Styled.AuthorImg>

@@ -19,12 +19,8 @@ export default function CategoryFilter() {
   const { setCategory } = useCategoryFilter();
 
   function handleCategoryClick(index: CategoryFilterTypes) {
-    if (index === activeCategory) {
-      return;
-    } else {
-      setActiveCategory(index);
-      setCategory(index);
-    }
+    setActiveCategory(index);
+    setCategory(index);
   }
 
   return (
@@ -32,8 +28,10 @@ export default function CategoryFilter() {
       {categories.map((category) => {
         return (
           <Styled.Categories
+            data-testid={category.category}
             key={category.category}
             active={category.category === activeCategory}
+            disabled={category.category === activeCategory}
             onClick={() =>
               handleCategoryClick(category.category as CategoryFilterTypes)
             }
